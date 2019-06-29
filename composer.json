@@ -1,0 +1,17 @@
+{
+    "name": "mladoux/cms",
+    "description": "Content Management System",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mark LaDoux",
+            "email": "mark.ladoux@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.12",
+        "robmorgan/phinx": "^0.10.7",
+        "doctrine/orm": "^2.6",
+        "doctrine/dbal": "^2.9"
+    }
+}
