@@ -26,7 +26,7 @@ foreach ($modules as $module) {
 $config = (file_exists(CONFIG_PATH . 'app.php')) ? ['settings' => require CONFIG_PATH . 'app.php'] : [];
 
 // Load Slim
-$app = new \Slim\App();
+$app = new \Slim\App($config);
 
 // Get Slim container
 $container = $app->getContainer();
