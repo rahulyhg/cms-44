@@ -11,7 +11,7 @@ include $config_path . 'constants.php';
 $composer = include VENDOR_PATH . 'autoload.php';
 
 // Register system path and namespace
-$composer->addPsr4('System\\', SYSTEM_PATH);
+$composer->addPsr4('System\\', SYSTEM_PATH . 'src/');
 
 // Load module namespaces
 $modules = require CONFIG_PATH . 'modules.php';
@@ -21,6 +21,9 @@ foreach ($modules as $module) {
 
   $composer->addPsr4($namespace, $path);
 }
+
+// Get common methods
+require SYSTEM_PATH . 'common.php';
 
 // Get configuration
 $config = (file_exists(CONFIG_PATH . 'app.php')) ? ['settings' => require CONFIG_PATH . 'app.php'] : [];
