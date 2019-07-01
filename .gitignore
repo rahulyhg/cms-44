@@ -1,1 +1,2 @@
 config/db.php
+resources/logs/*.log

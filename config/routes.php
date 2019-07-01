@@ -21,7 +21,7 @@ if (! in_array('/', $registeredRoutes)) {
   $app->get('/', function (Request $request, Response $response, array $args) {
 
     $response->getBody()->write("Simple Slim Based CMS Framework");
-
+    $this->logger->addInfo('default route used');
     return $response;
   });
 }

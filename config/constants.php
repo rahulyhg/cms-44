@@ -10,3 +10,4 @@ define('CONFIG_PATH', $config_path);
 define('SYSTEM_PATH', 'system' . DS);
 define('MODULE_PATH', 'module' . DS);
 define('VENDOR_PATH', 'vendor' . DS);
+define('RESOURCE_PATH', 'resources' . DS);

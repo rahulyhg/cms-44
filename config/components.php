@@ -10,3 +10,7 @@ foreach ($modules as $module) {
     require $moduleConfig;
   }
 }
+
+if (file_exists($system_components = SYSTEM_PATH . 'config' . DS . 'components.php')) {
+  require $system_components;
+}

@@ -37,6 +37,10 @@ class ComposerStaticInit67c98d13d184f6d2bd66615518c93cef
             'Psr\\Container\\' => 14,
             'Phinx\\' => 6,
         ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'I' => 
         array (
             'Interop\\Container\\' => 18,
@@ -125,6 +129,10 @@ class ComposerStaticInit67c98d13d184f6d2bd66615518c93cef
         'Phinx\\' => 
         array (
             0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Interop\\Container\\' => 
         array (
