@@ -20,8 +20,8 @@ $registeredRoutes = System\getRegisteredRoutes($container);
 if (! in_array('/', $registeredRoutes)) {
   $app->get('/', function (Request $request, Response $response, array $args) {
 
-    $response->getBody()->write("Simple Slim Based CMS Framework");
-    $this->logger->addInfo('default route used');
-    return $response;
+    $this->logger->addInfo('No default route defined');
+
+    return $this->view->render($response, 'error/not_defined.twig');
   });
 }
