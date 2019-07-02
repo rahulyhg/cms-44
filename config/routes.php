@@ -14,7 +14,12 @@ foreach ($modules as $module) {
   }
 }
 
-// Run it one last time to make sure we have all the routes
+$registeredRoutes = System\getRegisteredRoutes($container);
+
+if (file_exists($system_routes = SYSTEM_PATH . 'config' . DS . 'routes.php')) {
+  require $system_routes;
+}
+
 $registeredRoutes = System\getRegisteredRoutes($container);
 
 if (! in_array('/', $registeredRoutes)) {
