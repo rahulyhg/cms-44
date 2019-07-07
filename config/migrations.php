@@ -23,7 +23,9 @@ foreach ($modules as $module) {
   }
 }
 
-$db = require CONFIG_PATH . 'db.php';
+$db = (file_exists($dbconfig = require CONFIG_PATH . 'db.php')) ?
+  require $dbconfig :
+  [];
 
 return
 [
